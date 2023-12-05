@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #141922;
-    color: red;
-}
-
 html{
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #141922;
+    color: white;
 }
 
 #contenitore{
@@ -18,14 +18,16 @@ html{
     height: 100vh;
 }
 
+/*bottone*/
 header{
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 30px;
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
     z-index: 5;
     position: fixed;
+    top: 0;
 }
 
 header .button{
@@ -40,18 +42,21 @@ header .button{
 }
 
 header .button:hover{
-    background-color: #333333;
+    padding: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-
+/*menù laterale*/
 #menu{
-    background: black;
+    background-color: black;
     color: grey;
     width: 250px;
     height: 100%;
     padding: 20px;
     position: fixed;
     z-index: 10;
+    left: 0;
 }
 
 #voci{
@@ -89,13 +94,19 @@ header .button:hover{
     font-size: 22px;
 }
 
+/*menù canzoni*/
 section{
     padding-top: 100px;
     padding-left: 250px;
 }
 
-#opzioni ul{
+#manu-canzoni{
+    background-color: red;
+}
+
+.opzioni ul{
     background-color: orange;
+    padding: 10px;
     color: #73757b;
     display: flex;
     justify-content: center;
@@ -103,24 +114,44 @@ section{
     text-transform: uppercase;
 }
 
-#opzioni ul li{
+.opzioni ul li{
     list-style: none;
 }
 
-.tasto:hover{
-    border-bottom: 3px solid green;
-    
+.tasto{
+    border-bottom: 3px solid #adff2f;
 }
 
+/*album*/
+h1{
+    background-color: blue;
+    padding: 20px;
+}
 
+#menu-canzoni img{
+    width: 100%;
+}
 
+#fila-album{
+    display: flex;
+    flex-direction: row;
+}
 
+.nome-album{
+    flex-basis: calc(100% / 3);
+    background-color: cyan;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
-
-
+.nome-album span{
+    font-size: 13px;
+}
 
 footer{
-    color: blueviolet;
-    padding-top: 500px;
+    background-color: darkmagenta;
+    padding-top: 50px;
     padding-left: 250px;
 }
