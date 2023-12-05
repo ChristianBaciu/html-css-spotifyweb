@@ -4,23 +4,36 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #141922;
+    color: red;
+}
+
 html{
     font-family: 'Roboto', sans-serif;
 }
 
+#contenitore{
+    border: 3px solid lime;
+    height: 100vh;
+}
+
 header{
     background-color: grey;
-    padding: 50px;
+    padding: 30px;
     display: flex;
+    width: 100%;
     flex-direction: row-reverse;
+    z-index: 5;
+    position: fixed;
 }
 
 header .button{
     background-color: black;
     color: white;
     padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 2px solid white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -35,10 +48,10 @@ header .button:hover{
     background: black;
     color: grey;
     width: 250px;
-    height: 90vh;
+    height: 100%;
     padding: 20px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
 #voci{
@@ -76,7 +89,38 @@ header .button:hover{
     font-size: 22px;
 }
 
-section div{
-    color: red;
+section{
+    padding-top: 100px;
+    padding-left: 250px;
+}
+
+#opzioni ul{
+    background-color: orange;
+    color: #73757b;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+#opzioni ul li{
+    list-style: none;
+}
+
+.tasto:hover{
+    border-bottom: 3px solid green;
+    
+}
+
+
+
+
+
+
+
+
+footer{
+    color: blueviolet;
+    padding-top: 500px;
     padding-left: 250px;
 }
