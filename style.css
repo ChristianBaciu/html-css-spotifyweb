@@ -8,43 +8,75 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    background-color: grey;
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header .button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+header .button:hover{
+    background-color: #333333;
+}
+
+
 #menu{
     background: black;
     color: grey;
-    height: 100vh;
     width: 250px;
+    height: 90vh;
     padding: 20px;
+    position: fixed;
+    z-index: 1;
 }
 
-#menu svg{
-    fill: grey;
-    height: 16px;
-    width: 18px;
+#voci{
+    padding-top: 20px;
 }
 
-#menu .opzioni{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-#menu h4{
-    text-transform: uppercase;
-    color: white;
-}
-
-/*aggiungi*/
-
-#menu .aggiungi{
-    background-color: grey;
-    height: 40px;
-    width: 40px;
+#voci div{
     padding: 5px;
-    font-size: 25px;
-    text-align: center;
-    color: red;
-    text-transform: capitalize;
+}
+
+#voci svg{
+    width: 16px;
+    fill: grey
+}
+
+#voci h4{
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#aggiungi{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    text-transform: capitalize;
+}
 
+#aggiungi .aggiungi-brano{
+    background-color: grey;
+    color: black;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+
+section div{
+    color: red;
+    padding-left: 250px;
 }
