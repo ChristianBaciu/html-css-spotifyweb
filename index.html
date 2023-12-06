@@ -9,131 +9,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Spotify Fake</title>
+    <title>Spotify</title>
 
     <link rel="icon" href="img/favicon.ico">
 
 </head>
 <body>
-
-    <!--bottone-->
-    <div id="contenitore">
-        <header>
-            <div>
-                <span class="button">effttua l'upgrade</span>
-            </div>
-        </header>
-
     
+    <div id="contanier-vh">
+        <div class="contanier-spotify">
+            <div class="contanier-sinistra">
 
-
-        <!--menù laterale-->
-        <div id="menu">
-            <div>
-                <img src="img/logo.svg" width="120" alt="">
-            </div>
-    
-            <div id="voci">
-                <div>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/></svg>
-                    Home
-                </div>
-                <div>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"/></svg>
-                    Cerca
-                </div>
-                <div>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/></svg>
-                    La tua libreria
-                </div>
-    
-                <h4>playlist</h4>
-    
-                <div id="aggiungi">
-                    <div class="aggiungi-brano">
-                        +
+                <div id="menu">
+                    <div>
+                        <img src="img/logo.svg" width="120" alt="">
                     </div>
-                    <span>crea playlist</span>
+            
+                    <div id="voci">
+                        <div>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/></svg>
+                            Home
+                        </div>
+                        <div>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"/></svg>
+                            Cerca
+                        </div>
+                        <div>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/></svg>
+                            La tua libreria
+                        </div>
+            
+                        <h4>playlist</h4>
+            
+                        <div id="aggiungi">
+                            <div class="aggiungi-brano">
+                                +
+                            </div>
+                            <span>crea playlist</span>
+                        </div>
+                        
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                    </div>
                 </div>
-                
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
-                <div>Nome Playlist</div>
             </div>
-        </div>
-    
 
+            <div class="contanier-album">
+                <div class="container-bottone">
+                    <button>EFFETTUA L'UPGRADE</button>
+                </div>
 
-
-
-        <!--menù canzoni-->
-        <section>
-            <div id="menu-canzoni">
                 <div class="opzioni">
                     <ul>
-                        <li><strong>in evidenza</strong></li>
-                        <li><strong>podcast</strong></li>
-                        <li><strong>classifiche</strong></li>
-                        <li><strong>generi e mood</strong></li>
-                        <li><strong>nuove uscite</strong></li>
-                        <li><strong>scopri</strong></li>
+                        <li>IN EVIDENZIA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
                     </ul>
                 </div>
+
+                <!--fila album-->
+                <div>
+                    <h2>Recently played</h2>
+                </div>
                 
-                <!--album-->
-                <h1>Recently player</h1>
-    
+
                 <div id="fila-album">
-
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
+                    <div class="album">
+                        <img src="album/drake1.PNG" alt="">
+                        <h3>Views</h3>
                         <span>Drake</span>
                     </div>
 
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
+                    <div class="album">
+                        <img src="album/eminem1.png" alt="">
+                        <h3>The Eminem Show (Expanded Edition)</h3>
+                        <span>Eminem</span>
+                    </div>
+
+                    <div class="album">
+                        <img src="album/drake3.PNG" alt="">
+                        <h3>Laugn Now Cry Later (feat. Lil Dunk) - Drake</h3>
                         <span>Drake</span>
                     </div>
 
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
+                    <div class="album">
+                        <img src="album/imaginedragons1.png" alt="">
+                        <h3>Evolve</h3>
+                        <span>imagine Dragons</span>
+                    </div>
+
+                    <div class="album">
+                        <img src="album/gigidagostino.PNG" alt="">
+                        <h3>L'amour toujours - EP</h3>
+                        <span>Gigi D'Agostino</span>
+                    </div>
+
+                    <div class="album">
+                        <img src="album/drake2.PNG" alt="">
+                        <h3>Scorpion</h3>
                         <span>Drake</span>
                     </div>
 
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
-                        <span>Drake</span>
-                    </div>
+                
+                    
 
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
-                        <span>Drake</span>
-                    </div>
 
-                    <div class="nome-album">
-                        <img src="album/drake1.png" alt="img">
-                        <h4>Views</h4>
-                        <span>Drake</span>
-                    </div>
 
                 </div>
 
+
+
+
+
+
+
+
+
+
+
             </div>
+        </div>
 
-        </section>
-    
-
-    
+        <div class="contanier-bottom">
+            play video
+        </div>
     </div>
-
 </body>
 </html>

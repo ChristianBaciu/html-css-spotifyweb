@@ -9,60 +9,53 @@ html{
 }
 
 body{
-    background-color: #17305f;
-    color: white;
-}
-
-#contenitore{
-    border: 3px solid lime;
-    height: 100vh;
-}
-
-/*bottone*/
-header{
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    display: flex;
-    width: 100%;
-    flex-direction: row-reverse;
-    z-index: 5;
-    position: fixed;
-    top: 0;
-}
-
-header .button{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 2px solid white;
-    border-radius: 50px;
-    text-transform: uppercase;
-}
-
-/*menù laterale*/
-#menu{
-    background-color: black;
     color: grey;
-    width: 250px;
-    height: 100%;
-    padding: 20px;
-    position: fixed;
-    z-index: 10;
-    left: 0;
 }
 
-#voci{
-    padding-top: 20px;
+#contanier-vh{
+    height: 100vh;
+    /*border: 1px solid yellow;*/
+
 }
+ 
+/*contenitore alto, sinistra, basso, bottone*/
+.contanier-spotify{
+    height: calc(100% - 80px);    /*-100px dal bottom*/
+    background-color: #141922;
+    display: flex;
+}
+
+.contanier-bottom{
+    height: 80px;
+    background-color: #282828;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+}
+
+/*menù*/
+.contanier-sinistra{
+    background-color: black;
+    height: 100%;
+    width: 250px;
+}
+
+#menu{
+    padding: 20px;
+}
+
+#menu img{
+    padding-bottom: 20px;
+}
+
 
 #voci div{
     padding: 5px;
 }
 
 #voci svg{
-    width: 16px;
+    width: 25px;
     fill: grey
 }
 
@@ -88,83 +81,131 @@ header .button{
     font-size: 22px;
 }
 
-/*menù canzoni*/
-section{
-    padding-top: 100px;
-    padding-left: 250px;
-}
-
-#manu-canzoni{
-    background-color: red;
-}
-
-.opzioni ul{
-    background-color: orange;
-    padding: 5px;
-    color: #73757b;
+/*bottone upgrade*/
+.container-bottone{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    text-transform: uppercase;
+    flex-direction: row-reverse;
 }
 
-.opzioni ul li{
+.container-bottone button{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+/*lista album*/
+.contanier-album{
+    /*border: 1px solid blue;*/
+    width: calc(100% - 250px);
+    height: 100%;
+}
+
+ul li{
     list-style: none;
 }
 
-/*album*/
-#menu-canzoni h1{
-    background-color: blue;
+.opzioni ul{
+    display: flex;
+    flex-wrap: wrap;    /*per non rompere le opzioni*/
+    gap: 20px;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+
+
+/*fila album*/
+.contanier-album h2{
+    color: white;
     padding: 20px;
 }
 
-#menu-canzoni img{
+
+#fila-album{
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+
+#fila-album .album{
+    /*border: 1px solid black;*/
+    width: calc((100% / 6) - 10px);
+    height: 100%;
+    padding-top: 20px;
+
+}
+
+#fila-album img{
     width: 100%;
 }
 
-#fila-album{
-    display: flex;
-    flex-direction: row;
-    
-    background-color: cyan;
+#fila-album h3{
+    color: white;
+    font-size: 15px;
 }
 
-.nome-album{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-    border: 2px solid yellow;
-}
-
-.nome-album span{
+#fila-album span{
     font-size: 13px;
 }
 
 
+/*spotify md*/
+@media screen and ( max-width: 1024px ){
 
+    #fila-album{
+        /*background-color: blue;*/
+        overflow: auto;
+    }
+
+    #fila-album .album{
+        width: calc((100% / 5) - 10px);
+        /*border: 1px solid black;*/
+    }
+
+}
 
 /*spotify md*/
 @media screen and ( max-width: 768px ){
+
     #fila-album{
-        width: calc(100% - 10%);
-        background-color: red;
+        /*background-color: yellow;*/
+        overflow: auto;
     }
-    
+
+    #fila-album .album{
+        width: calc((100% / 4) - 10px);
+        /*border: 1px solid black;*/
+    }
+
 }
 
 /*spotify s*/
 @media screen and ( max-width: 576px ){
-    
+
 }
 
 /*spotify xs*/
 @media screen and ( max-width: 480px ){
-    
+
 }
 
 /*spotify height*/
 @media screen and ( max-width: 350px ){
-    
-}
 
+}
