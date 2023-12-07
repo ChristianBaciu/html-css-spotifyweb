@@ -194,6 +194,15 @@ ul li{
     clip-path: circle(50%);
 }
 
+/*piu popolari*/
+
+#piu-popolari{
+    padding-bottom: 30px;
+}
+
+#piu-popolari #fila-album .album img{
+    clip-path: circle(50%);
+}
 
 /*spotify*/
 @media screen and ( max-width: 1024px ){
