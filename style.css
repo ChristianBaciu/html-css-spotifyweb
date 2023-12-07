@@ -14,7 +14,8 @@ body{
 
 #contanier-vh{
     height: 100vh;
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
+
 }
 
 /*contenitore alto, sinistra, basso, bottone*/
@@ -27,6 +28,10 @@ body{
 .contanier-bottom{
     height: 80px;
     background-color: #282828;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
 }
 
 /*menù*/
@@ -39,6 +44,11 @@ body{
 #menu{
     padding: 20px;
 }
+
+#menu img{
+    padding-bottom: 20px;
+}
+
 
 #voci div{
     padding: 5px;
@@ -71,11 +81,7 @@ body{
     font-size: 22px;
 }
 
-
-
-
-
-
+/*bottone upgrade*/
 .container-bottone{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -98,11 +104,13 @@ body{
 }
 
 
+
 /*lista album*/
 .contanier-album{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: calc(100% - 250px);
     height: 100%;
+    overflow: auto;    /*senza questo creato per spacca al pagina*/
 }
 
 ul li{
@@ -115,4 +123,107 @@ ul li{
     gap: 20px;
     justify-content: center;
     padding-top: 90px;
+}
+
+
+
+/*fila album*/
+.contanier-album h2{
+    color: white;
+    padding: 20px;
+}
+
+
+#fila-album{
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+
+#fila-album .album{
+    /*border: 1px solid black;*/
+    width: calc((100% / 6) - 10px);
+    height: 100%;
+    padding-top: 20px;
+
+}
+
+#fila-album img{
+    width: 100%;
+}
+
+#fila-album h3{
+    color: white;
+    font-size: 15px;
+}
+
+#fila-album span{
+    font-size: 13px;
+}
+
+/*suggerimenti*/
+.per-x span,
+.popolari span{
+    padding: 20px;
+    font-size: 13px;
+}
+
+/*piu popolari*/
+
+#piu-popolari{
+    padding-bottom: 30px;
+}
+
+#piu-popolari #fila-album .album img{
+    clip-path: circle(50%);
+}
+
+
+/*spotify md*/
+@media screen and ( max-width: 1024px ){
+
+    #fila-album{
+        /*background-color: blue;*/
+        overflow: auto;
+    }
+
+    #fila-album .album{
+        width: calc((100% / 5) - 10px);
+        /*border: 1px solid black;*/
+    }
+
+}
+
+/*spotify md*/
+@media screen and ( max-width: 768px ){
+
+    #fila-album{
+        /*background-color: yellow;*/
+        overflow: auto;
+    }
+
+    #fila-album .album{
+        width: calc((100% / 4) - 10px);
+        /*border: 1px solid black;*/
+    }
+
+}
+
+/*spotify s*/
+@media screen and ( max-width: 576px ){
+
+}
+
+/*spotify xs*/
+@media screen and ( max-width: 480px ){
+
+}
+
+/*spotify height*/
+@media screen and ( max-width: 350px ){
+
 }
