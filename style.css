@@ -110,6 +110,7 @@ body{
     /*border: 1px solid blue;*/
     width: calc(100% - 250px);
     height: 100%;
+    overflow: auto;    /*senza questo creato per spacca al pagina*/
 }
 
 ul li{
@@ -162,6 +163,23 @@ ul li{
 
 #fila-album span{
     font-size: 13px;
+}
+
+/*suggerimenti*/
+.per-x span,
+.popolari span{
+    padding: 20px;
+    font-size: 13px;
+}
+
+/*piu popolari*/
+
+#piu-popolari{
+    padding-bottom: 30px;
+}
+
+#piu-popolari #fila-album .album img{
+    clip-path: circle(50%);
 }
 
 
