@@ -17,7 +17,7 @@ body{
     /*border: 1px solid yellow;*/
 
 }
- 
+
 /*contenitore alto, sinistra, basso, bottone*/
 .contanier-spotify{
     height: calc(100% - 80px);    /*-100px dal bottom*/
@@ -188,7 +188,6 @@ ul li{
 
     #fila-album{
         /*background-color: blue;*/
-        overflow: auto;
     }
 
     #fila-album .album{
@@ -203,7 +202,6 @@ ul li{
 
     #fila-album{
         /*background-color: yellow;*/
-        overflow: auto;
     }
 
     #fila-album .album{
@@ -215,6 +213,16 @@ ul li{
 
 /*spotify s*/
 @media screen and ( max-width: 576px ){
+
+    #fila-album{
+        /*background-color: orange;*/
+    }
+
+    #fila-album .album{
+        width: calc((100% / 2) - 10px);
+        /*border: 1px solid black;*/
+    }
+
 
 }
 
