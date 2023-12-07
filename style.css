@@ -25,14 +25,6 @@ body{
     display: flex;
 }
 
-.contanier-bottom{
-    height: 80px;
-    background-color: #282828;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    bottom: 0;
-}
 
 /*menù*/
 .contanier-sinistra{
@@ -70,29 +62,22 @@ body{
     flex-direction: row;
     gap: 10px;
     text-transform: capitalize;
+    line-height: 55px;
 }
 
 #aggiungi .aggiungi-brano{
     background-color: grey;
     color: black;
-    width: 35px;
-    height: 35px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    font-size: 22px;
+    line-height: 50px;
 }
 
 #menu-small{
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
 /*bottone upgrade*/
 .container-bottone{
@@ -116,8 +101,6 @@ body{
     padding-right: 30px;
 }
 
-
-
 /*lista album*/
 .contanier-album{
     /*border: 1px solid blue;*/
@@ -138,14 +121,11 @@ ul li{
     padding-top: 90px;
 }
 
-
-
 /*fila album*/
 .contanier-album h2{
     color: white;
     padding: 20px;
 }
-
 
 #fila-album{
     /*background-color: red;*/
@@ -156,13 +136,11 @@ ul li{
     gap: 10px;
 }
 
-
 #fila-album .album{
     /*border: 1px solid black;*/
     width: calc((100% / 6) - 10px);
     height: 100%;
     padding-top: 20px;
-
 }
 
 #fila-album img{
@@ -194,15 +172,79 @@ ul li{
     clip-path: circle(50%);
 }
 
-/*piu popolari*/
 
-#piu-popolari{
-    padding-bottom: 30px;
+
+
+
+#container-bottom{
+    height: 80px;
+    background-color: #282828;
+    background-color: blue;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
-#piu-popolari #fila-album .album img{
-    clip-path: circle(50%);
+.play-music{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
 }
+
+.left{
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    padding: 20px;
+    gap: 10px;
+    fill: grey;
+}
+
+.left div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+
+
+#center{
+    background-color: aqua;
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    gap: 30px;
+    background-color: orange;
+}
+
+
+.center svg{
+    fill: white;    
+    height: 50px;
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.play-music .left img{
+    width: 45px;
+    text-align: center;
+}
+
+
+
+
+
 
 /*spotify*/
 @media screen and ( max-width: 1024px ){
@@ -243,7 +285,6 @@ ul li{
         width: calc((100% / 2) - 10px);
         /*border: 1px solid black;*/
     }
-
 
 }
 
