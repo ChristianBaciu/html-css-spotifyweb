@@ -175,7 +175,7 @@ ul li{
 
 
 
-
+/*footer*/
 #container-bottom{
     height: 80px;
     background-color: #282828;
@@ -206,7 +206,9 @@ ul li{
     row-gap: 5px;
 }
 
-
+.left h3{
+    color: white;
+}
 
 
 #center{
@@ -218,6 +220,7 @@ ul li{
     display: flex;
     gap: 30px;
     background-color: orange;
+    justify-content: center;
 }
 
 
@@ -235,16 +238,26 @@ ul li{
     gap: 10px;
 }
 
+.right svg{
+    fill: grey;    
+}
 
 .play-music .left img{
     width: 45px;
     text-align: center;
 }
 
+#center .barra{
+    background-color: grey;
+    font-size: 5px;
+    border-radius: 50px;
+}
 
-
-
-
+.right .barra{
+    background-color: grey;
+    font-size: 5px;
+    border-radius: 50px;
+}
 
 /*spotify*/
 @media screen and ( max-width: 1024px ){
@@ -270,6 +283,66 @@ ul li{
     #fila-album .album{
         width: calc((100% / 4) - 10px);
         /*border: 1px solid black;*/
+    }
+
+    /*footer*/
+    #container-bottom{
+    }
+
+    .play-music{
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        fill: grey;
+        width: 25%;
+    }
+
+    .left div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .left h3{
+        color: white;
+    }
+
+    #center{
+        text-align: center;
+        margin: auto;
+    }
+
+    .center{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .center svg{
+        fill: white;    
+        height: 50px;
+    }
+
+
+    .right{
+        display: flex;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .right svg{
+        fill: grey;
+    }
+
+    .play-music .left img{
+        width: 45px;
+        text-align: center;
     }
 
 }
