@@ -81,6 +81,19 @@ body{
     font-size: 22px;
 }
 
+#menu-small{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 /*bottone upgrade*/
 .container-bottone{
     background-color: rgba(0, 0, 0, 0.5);
@@ -173,7 +186,6 @@ ul li{
 }
 
 /*piu popolari*/
-
 #piu-popolari{
     padding-bottom: 30px;
 }
@@ -183,7 +195,7 @@ ul li{
 }
 
 
-/*spotify md*/
+/*spotify*/
 @media screen and ( max-width: 1024px ){
 
     #fila-album{
@@ -229,9 +241,41 @@ ul li{
 /*spotify xs*/
 @media screen and ( max-width: 480px ){
 
-}
+    .contanier-album{
+        /*border: 1px solid blue;*/
+        width: 100%;
+    }
+        
+    #menu{
+        display: none;
+    }
 
-/*spotify height*/
-@media screen and ( max-width: 350px ){
+    #menu-small{
+        display: block;
+        padding: 25px;
+    }
+
+    .contanier-sinistra{
+        width: 80px;
+    }
+    
+    #menu-small img{
+        width: 25px;
+        padding-bottom: 25px;
+    }
+    
+    #voci-small svg{
+        width: 25px;
+        fill: grey;
+        padding-top: 5px;
+    }
+    
+    #fila-album{
+        /*background-color: purple;*/
+    }
+
+    #fila-album .album{
+        /*border: 1px solid black;*/
+    }
 
 }
