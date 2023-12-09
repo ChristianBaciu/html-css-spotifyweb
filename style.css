@@ -72,16 +72,18 @@ body{
     display: none;
 }
 
-
-
-
-
-
-
-
-
+/*menù*/
 #menu{
     padding: 20px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: grey;
+}
+
+#menu a:hover{
+    color: white;
 }
 
 #menu img{
@@ -166,6 +168,17 @@ ul li{
     gap: 20px;
     justify-content: center;
     padding-top: 90px;
+    
+}
+
+.opzioni a{
+    text-decoration: none;
+    color: grey;
+}
+
+.opzioni a:hover{
+    color: white;
+    border: none;
 }
 
 /*fila album*/
@@ -218,9 +231,6 @@ ul li{
 #piu-popolari #fila-album .album img{
     clip-path: circle(50%);
 }
-
-
-
 
 /*footer*/
 #container-bottom{
