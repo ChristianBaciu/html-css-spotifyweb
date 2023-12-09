@@ -68,6 +68,12 @@ body{
     padding-top: 10px;
 }
 
+.profilo:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
 #account-small{
     display: none;
 }
@@ -111,17 +117,21 @@ body{
     flex-direction: row;
     gap: 10px;
     text-transform: capitalize;
-    line-height: 55px;
+    align-items: center;
 }
 
 #aggiungi .aggiungi-brano{
     background-color: grey;
     color: black;
+    width: 40px;
+    height: 40px;
     font-size: 50px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#aggiungi:hover{
+    color: white;
 }
 
 #menu-small{
@@ -207,6 +217,7 @@ ul li{
     width: 100%;
 }
 
+
 #fila-album h3{
     color: white;
     font-size: 15px;
@@ -236,7 +247,7 @@ ul li{
 #container-bottom{
     height: 80px;
     background-color: #282828;
-    background-color: blue;
+    /*background-color: blue;*/
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -251,9 +262,9 @@ ul li{
 .left{
     display: flex;
     align-items: center;
-    background-color: purple;
+    /*background-color: purple;*/
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
     fill: grey;
 }
 
@@ -263,23 +274,34 @@ ul li{
     row-gap: 5px;
 }
 
+
+.left div span:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
 .left h3{
     color: white;
 }
 
+.left svg:hover{
+    fill: white;
+}
+
+
 
 #center{
-    background-color: aqua;
+    /*background-color: aqua;*/
     text-align: center;
 }
 
 .center{
     display: flex;
     gap: 30px;
-    background-color: orange;
+    /*background-color: orange;*/
     justify-content: center;
 }
-
 
 .center svg{
     fill: white;    
@@ -290,9 +312,14 @@ ul li{
 .right{
     display: flex;
     align-items: center;
-    background-color: red;
+    /*background-color: red;*/
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
+}
+
+.right div svg:hover{
+    fill: white;
+    cursor: pointer;
 }
 
 .right svg{
@@ -304,17 +331,6 @@ ul li{
     text-align: center;
 }
 
-#center .barra{
-    background-color: grey;
-    font-size: 5px;
-    border-radius: 50px;
-}
-
-.right .barra{
-    background-color: grey;
-    font-size: 5px;
-    border-radius: 50px;
-}
 
 /*spotify*/
 @media screen and ( max-width: 1024px ){
