@@ -15,7 +15,6 @@ body{
 #contanier-vh{
     height: 100vh;
     /*border: 1px solid yellow;*/
-
 }
 
 /*contenitore alto, sinistra, basso, bottone*/
@@ -32,6 +31,54 @@ body{
     height: 100%;
     width: 250px;
 }
+
+#ciao-cari-amici-followers-solari{
+    height: calc(100% - 100px);
+}
+
+/*profilo*/
+#account{
+    height: 100px;
+    padding: 20px;
+}
+
+#account .profilo .installa{
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#account .profilo svg{
+    fill: grey;
+    height: 20px;
+}
+
+#account .profilo .nome-cognome svg{
+    background-color: grey;
+    fill: white;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#account .profilo .nome-cognome{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#account-small{
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 #menu{
     padding: 20px;
@@ -400,5 +447,31 @@ ul li{
     #fila-album .album{
         /*border: 1px solid black;*/
     }
+
+
+    /*profilo*/
+    #account{
+        display: none;
+    }
+
+    #account-small{
+        display: block;
+        justify-content: center;
+        display: flex;
+    }
+
+    #account-small .profilo-small svg{
+        fill: grey;
+        height: 35px;
+    }
+
+    #account-small .profilo-small .nome-cognome-small svg{
+        background-color: grey;
+        fill: white;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+
 
 }
